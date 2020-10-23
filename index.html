@@ -1,53 +1,32 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halloween BABA Bash</title>
     <link href="StyleSheet1.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="JavaScript.js"></script>
 </head>
-<body onload="randomNum()" id="animate-area">
-    <!-- Title -->
-    <h1>Math Practice</h1>
-    <button><a href="index.html">Addition/ Subtraction</a></button>
-    <button><a href="Multiplication.html">Multiplication</a></button>
-    
 
-    <!-- Score -->
-    <div id="score">Correct Answers: 0</div>
+<body>
+    <div>
+        <!-- Title -->
+        <h1 class="center" id="shad">Halloween BABA Bash</h1>
 
-    <!-- School Pic -->
-    <div id="school"><image src="images/school.png" style="width:100%;height:auto;" /></div>
-
-    <!-- Math Problem -->
-    <div id="mathp">
-    <table class="problem">
-    <tr>
-        <td></td>
-        <td id="num1" align="right"></td>
-    </tr>
-    <tr>
-        <td id="operator"></td>
-        <td id="num2" align="right"></td>
-    </tr>
-    </table>
-    
-
-    <!-- Correct Answer -->
-    <p id="answer" style="visibility:hidden;"></p>
-
-    <!-- User Anser -->
-    <form id="myForm" method="post" onsubmit="myFunction(); return false;">
-        <input type="text" id="userAnswer" name="userAnswer" placeholder="type answer" />
-        <input type="submit" id="submit" value="Check" />
-    </form>
-    </div>
-    <!-- Answer Responose -->
-    <p id="demo"></p>
-
-    <!-- Next -->
-    <button id="btnNext" onclick="myClear()" style="visibility:hidden;">Next</button> 
+        <!-- Selection -->
+        <div>
+            <button id="section"><a href= "SlipItIn.html">Slip It In</a></button>
+            <button id="section"><a href= "MurderMystery.html">Murder Mystery</a></button>
+            <button id="section"><a href= "WouldYouRather.html">Would You Rather</a></button>
+            <button id="section"><a href= "ScavHunt.html">Scavenger Hunt</a></button>
+            <button id="section"><a href= "BDayGirl.html">Do you know the Birthday Girl</a></button>
+            <button id="section"><a href= "AskMeAbout.html">Ask Me About</a></button>
+            <button id="section"><a href= "DrinkRecipes.html">Drink Recipes</a></button>
+            <button id="section"><a href= "HouFood.html">Houston Food</a></button>
+            <button id="section"><a href= "HouActivities.html">Houston Activities</a></button>
+            <button id="section">Picture Upload</button>
+        </div>
+    </div> 
 
 </body>
 </html>
