@@ -1,134 +1,340 @@
-﻿@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-        width: 80%;
-        padding: 0;
-    }
-    .right {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    body, #school, #mathp, table.problem {
-        width: 40%;
-    }
-}
-
-@keyframes animatedBackground {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: 100% 0;
-    }
-}
-
-#animate-area {
-    width: 560px;
-    height: 400px;
-    background: url(images/bg-clouds.png) top repeat-x, linear-gradient(lightskyblue 30%, lightgreen, green) no-repeat center fixed;
-    background-size: initial, cover;
-    animation: animatedBackground 40s linear infinite;
-}
-
 body {
-    margin: auto;
-    width: 50%;
-    padding-top: 40px;
+  margin: auto;
+  width: 90%;
+  padding-top: 40px;
+  font-family: 'Comic Sans MS';
+  background-color: black;
+  background-image: url("images/graveyard.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#section {
     font-family: 'Comic Sans MS';
-}
-
-#school {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    z-index: -1;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 42px;
-    margin: 20px 0 0 0;
-    padding: 0;
-}
-
-#score {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-#mathp {
-    border-radius: 5px;
-    border: 3px solid blue;
-    padding: 20px;
-    margin-right: 150px;
-}
-
-table.problem {
-    font-size: 32px;
-    text-align: left;
-    border-bottom: solid;
-    margin: 10px 0px 60px 70px;
-}
-
-#answer {
-    font-size: 34px;
-    text-align: left;
-    color: red;
-    margin: -50px 0px 30px 90px;
-}
-
-input[type=text], select {
-    font-family: 'Comic Sans MS';
-    font-size: 24px;
-    padding: 5px 5px;
-    margin: 8px 0;
-    width: 45%;
-    text-align: right;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    font-family: 'Comic Sans MS';
-    font-size: 24px;
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4ca905;
+    color: #6505a9;
     margin: 8px 0;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #45a049;
+#section:hover {
+    background-color: #4ca905;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-#demo {    
-    font-weight: 700;
-    font-size: 30px;
-    margin-left: -30px;
+ 
+a:link {
+  color: #6505a9;
 }
 
-#btnNext {
-    font-family: 'Comic Sans MS';
-    background-color: #4CAF50;
-    color: white;
-    font-size: 30px;
-    padding: 20px 150px 20px 150px;
-    border-radius: 8px;
+@font-face {
+    font-family: 'zoombieland';
+    src: url(assets/zoombieland-font/Zoombieland-YzEGO.ttf);
 }
 
-#btnNext:hover {
-    background-color: #45a049;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+h1 {
+  font-family: zoombieland;
+  font-size: 50px;
+  color: #6505a9;
+
+}
+
+h2 {
+  font-size: 2vm;
+}
+
+#area {
+  background-color: #c5c5c59a;
+  padding: 10px;
+}
+
+#shad {
+  text-shadow: 5px 2px #000000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-containerScav {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  background-color: #4ca905;
+  padding: 10px;
+}
+
+.grid-itemScav {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  font-size: 5vm;
+  text-align: center;
+}
+
+.containerAsk label{
+  display: inline-block;
+  clear: left;
+  width: 200px;
+  text-align: right;
+}
+
+.containerAsk input {
+  display: inline-block;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay2 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay3 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay4 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay5 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay6 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay7 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay8 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay9 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay10 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay11 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlay12 {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.containerDrink {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.containerDrink img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.containerDrink .btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0.425);
+  color: #ffffff;
+  font-size: 3vm;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.containerDrink .btn:hover {
+  background-color: #4ca905;
 }
