@@ -55,8 +55,8 @@ function siiPhraseOpen() {
             document.getElementById("phrase2").innerHTML = "Phrase 2: " + bday4b;    
             return false;
         }
-        //brit
-        else if(x == "8-20"){
+        //open
+        else if(x == "10-20"){
             document.getElementById("phrase").innerHTML = "Phrase 1: " + bday5a;
             document.getElementById("phrase2").innerHTML = "Phrase 2: " + bday5b;    
             return false;
@@ -103,8 +103,8 @@ function siiPhraseOpen() {
             document.getElementById("phrase2").innerHTML = "Phrase 2: " + bday12b;    
             return false;
         }
-        //malelia
-        else if(x == "10-10"){
+        //open
+        else if(x == "10-23"){
             document.getElementById("phrase").innerHTML = "Phrase 1: " + bday13a;
             document.getElementById("phrase2").innerHTML = "Phrase 2: " + bday13b;    
             return false;
