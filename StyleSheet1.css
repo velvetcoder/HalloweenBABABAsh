@@ -20,7 +20,7 @@ body {
 
 #section {
     font-family: 'Comic Sans MS';
-    background-color: #f4f4f4;
+    background-color: #4ca905;
     color: #6505a9;
     margin: 8px 0;
     border: none;
@@ -38,12 +38,12 @@ a:link {
 }
 
 @font-face {
-    font-family: 'Mummified';
-    src: url(assets/mummified-font\MummifiedRegular-lgLyq.ttf);
+    font-family: 'zoombieland';
+    src: url(assets/zoombieland-font/Zoombieland-YzEGO.ttf);
 }
 
 h1 {
-  font-family: Mummified;
+  font-family: zoombieland;
   font-size: 50px;
   color: #6505a9;
 
