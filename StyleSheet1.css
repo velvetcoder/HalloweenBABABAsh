@@ -38,12 +38,12 @@ a:link {
 }
 
 @font-face {
-    font-family: 'zoombieland';
-    src: url(assets/zoombieland-font/Zoombieland-YzEGO.ttf);
+    font-family: 'Mummified';
+    src: url(assets/mummified-font\MummifiedRegular-lgLyq.ttf);
 }
 
 h1 {
-  font-family: zoombieland;
+  font-family: Mummified;
   font-size: 50px;
   color: #6505a9;
 
